@@ -1,0 +1,76 @@
+@media (max-width:440px) {
+    #title{
+        justify-content: center !important;
+    }
+}
+/* Teacher Profile Edit course Page */
+
+#t_edit_profile .text{
+    font-size: 19px;
+}
+
+@media screen and (max-width:500px) {
+    #t_edit_profile .text {
+        font-size: 15px;
+    }
+}
+
+/* Teacher Profile Edit course Page End*/
+
+/* Teacher Video Edit Course */
+#videoEdit, #videoRemove{
+    color: #000;
+    font-size: 14px;
+}
+#videoEdit img,
+#videoRemove img{
+    height: 15px;
+    width: 15px;
+}
+@media (max-width:430px) {
+    #videoEdit,
+        #videoRemove {
+            color: #000;
+            font-size: 12px;
+        }
+    
+        #videoEdit img,
+        #videoRemove img {
+            height: 13px;
+            width: 13px;
+        }
+}
+@media (max-width:363px) {
+    #courseCard-footer{
+        justify-content: center !important;
+    }
+}
+/* Teacher Video Edit Course End */
+
+
+/* Study Material Edit Page */
+.fa-thumbs-up{
+    color:#FFBB00 ;
+}
+@media (max-width:450px) {
+    #studyMaterial-footer {
+        justify-content: center !important;
+    }
+}
+
+/* Study Material Edit Page End */
+
+/* Avhhyas Edit */
+
+.pro_avhhyas{
+    width: 12px;
+    height: 10px;
+}
+@media (min-width:991px) and (max-width:1204px) {
+    
+    .rating{
+     font-size: small;
+    }
+}
+
+/* Avhhyas Edit End */

@@ -45,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: blink 0.8s ease-in infinite;
 }
 
 .whiteCircle .innerCircle {

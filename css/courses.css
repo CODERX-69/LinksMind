@@ -465,6 +465,7 @@
     border-radius: 15px;
 }
 
+
 .coursesVideo .videoIcon {
     position: absolute;
     margin-left: -11%;
@@ -503,12 +504,6 @@
     border-radius: 20px;
     background-image: url(../img/homePagePolygons.png);
 }
-#modal-content {
-    background: #FFFFFF;
-    border: 1px solid #FFBB00;
-    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
 
 .modal-content1 h1 {
     font-weight: 700;
@@ -518,7 +513,8 @@
     text-align: center;
 }
 
-.modal-content1 .buyBtn {
+.modal-content1 .buyBtn,
+.yesBtn {
     background: #FFBB00;
     border-radius: 6px;
     font-weight: 500;
@@ -527,7 +523,8 @@
     color: #FAFAFA;
 }
 
-.modal-content1 .sampeBtn {
+.modal-content1 .sampeBtn,
+.noBtn {
     background: #FFFFFF;
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 6px;
@@ -543,11 +540,13 @@
         font-size: 22px;
     }
 
-    .modal-content1 .buyBtn {
+    .modal-content1 .buyBtn,
+    .yesBtn {
         font-size: 18px;
     }
 
-    .modal-content1 .sampeBtn {
+    .modal-content1 .sampeBtn,
+    .noBtn {
         font-size: 18px;
     }
 }
@@ -576,10 +575,9 @@
 @media screen and (max-width:915px) {
 
     .rating {
-        padding-left:3px;
         background: #FFBB00;
         border-radius: 4px;
-        width: 75px;
+        width: 70px;
         height: fit-content;
     }
 }
@@ -653,7 +651,7 @@
 
 @media screen and (max-width :398px) {
     .rating {
-        width: 112px;
+        width: 110px;
     }
 
     .coursesVideo .videoIcon {
@@ -911,6 +909,11 @@
 .pdfIcon2 {
     width: 42px !important;
     height: 42px;
+}
+
+.pdfIcon3 {
+    width: 120px !important;
+    height: 36px;
 }
 
 /* courses details page */
@@ -1633,6 +1636,17 @@ Modal .lectureAccordion .accordion-button:focus {
 
 #enrollModal input[type=number]:focus {
     outline: none;
+}
+
+#enrollModal input::-webkit-outer-spin-button,
+#enrollModal input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+#enrollModal input[type=number] {
+    -moz-appearance: textfield;
 }
 
 @media screen and (max-width:991px) {

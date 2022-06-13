@@ -1,5 +1,6 @@
 .mcqSubmitBox {
     border: 2px solid rgba(0, 0, 0, 0.15);
+    gap:2rem;
 }
 
 .mcqSubmit h2,
@@ -609,7 +610,7 @@
 }
 
 .percentCircle {
-    background-image: url(../studentProfilePages/img/percentBg.png);
+    background-image: url(../teacherProfilePages/img/percentBg.png);
     /* width: fit-content; */
     /* height: fit-content; */
     background-size: cover;
@@ -621,6 +622,7 @@
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
+    animation: blink 1s ease-in infinite;
 }
 
 .percentCircle .percent {

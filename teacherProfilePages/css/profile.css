@@ -678,6 +678,7 @@ body {
     border-radius: 50%;
     background: #F5F5F5;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: blink 1s ease-in infinite;
 }
 
 .leaderBoardCarousel .leaderCard .rightSide {
@@ -862,7 +863,19 @@ body {
     position: absolute;
     right: -30px;
     bottom: -30px;
+    animation: blink 1s ease-in infinite;
 }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 @media screen and (max-width:768px) {
     .progressCard h2 {
@@ -937,6 +950,7 @@ body {
     background: #F5F5F5;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
+    animation: blink 1s ease-in infinite;
 }
 
 .attendanceCard .yellowOuterCircle {
@@ -948,6 +962,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: blink 0.8s ease-in infinite;
 }
 
 .attendanceCard .greenOuterCircle {
@@ -959,6 +974,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: blink 0.8s ease-in infinite;
 }
 
 .attendanceCard .innerCircle {
@@ -1089,7 +1105,8 @@ body {
 
     .dailyAttendanceModalHeading,
     .dailyAttendanceModalContent {
-        width: 900px;
+        width: 500px;
+        padding-right: 20px;
         font-size: 12px;
     }
 }
@@ -1183,6 +1200,8 @@ body {
     opacity: 0.7;
     text-align: center;
 }
+
+
 
 @media screen and (max-width:800px) {
     .supportBox .supportFaqImg {

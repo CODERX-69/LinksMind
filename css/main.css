@@ -68,7 +68,7 @@ body {
 }
 
 .fw-800 {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 @media screen and (max-width:450px) {
@@ -110,20 +110,20 @@ body {
 
 .nav-link {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     margin-left: 8px;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     margin-left: 40px;
-}
+} */
 
-@media screen and (max-width:1362px) {
+/* @media screen and (max-width:1362px) {
     .navbar-nav {
         margin-left: 10px;
     }
-}
+} */
 
 .nav-link:hover {
     transform: scale(1.1);
@@ -199,13 +199,13 @@ body {
     }
 
     .nav-link {
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 0px;
     }
 
     .searchBar input[type=text].active {
         height: 50px;
-        width: 200px !important;
+        width: 199px !important;
     }
 
     .navbar .loginBtn {
@@ -217,13 +217,13 @@ body {
 
 }
 
-@media screen and (max-width:1264px) {
+@media screen and (max-width:1281px) {
     .nav-item .active {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .nav-link {
-        font-size: 16px;
+        font-size: 15px;
         margin-left: 0px;
     }
 
@@ -231,9 +231,9 @@ body {
         font-size: 16px;
     }
 
-    .navbar-nav {
+    /* .navbar-nav {
         margin-left: 10px;
-    }
+    } */
 }
 
 @media screen and (max-width:1201px) {
@@ -1855,13 +1855,14 @@ footer .backtoTop .fa-angle-up {
 .rightContact input[type=text],
 .rightContact textarea,
 .bottomContact input[type=text],
+.bottomContact input[type=email],
 .bottomContact textarea {
     border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     font-weight: 400;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
-    width: 95%;
+    /* width: 95%; */
 }
 
 .rightContact input[type=text]:focus,
@@ -1915,6 +1916,7 @@ footer .backtoTop .fa-angle-up {
     .rightContact input[type=text],
     .rightContact textarea,
     .bottomContact input[type=text],
+    .bottomContact input[type=email],
     .bottomContact textarea {
         font-size: 16px;
     }
@@ -1967,6 +1969,7 @@ footer .backtoTop .fa-angle-up {
     .rightContact input[type=text],
     .rightContact textarea,
     .bottomContact input[type=text],
+    .bottomContact input[type=email],
     .bottomContact textarea {
         font-size: 16px;
     }

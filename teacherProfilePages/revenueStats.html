@@ -26,8 +26,9 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="../css/courses.css">
-    <link rel="stylesheet" href="./css/purchasedCourses.css">
-    <link rel="stylesheet" href="./css/followedTeacher.css">
+    <link rel="stylesheet" href="../css/mcqTest.css">
+    <link rel="stylesheet" href="css/accountDetail.css">
+    <link rel="stylesheet" href="./css/studentReportCard.css">
     <title>Links Mind</title>
 </head>
 
@@ -78,7 +79,7 @@
         <i class="fa-solid fa-bars close"></i>
         <i class="fa-solid fa-bars-staggered open"></i>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex">
         <div class="navigation active">
             <div class="scholarShipPointsBox">
                 <div>
@@ -134,11 +135,9 @@
                         <span class="title">Credited Points</span>
                     </a>
                 </li>
-                <li class="list active">
+                <li class="list">
                     <a href="#">
-                        <b></b>
-                        <b></b>
-                        <span class="icon"><img src="./img/reshuffleCoursesIconDark.png" alt=""></span>
+                        <span class="icon"><img src="./img/reshuffleCoursesIcon.png" alt=""></span>
                         <span class="title">Edit Courses</span>
                     </a>
                 </li>
@@ -184,19 +183,20 @@
                         <span class="title">Reshuffle Courses</span>
                     </a>
                 </li>
-                <li class="list ">
+                <li class="list active">
                     <a href="#">
-                        <span class="icon"><img src="./img/Revenue.png" alt=""></span>
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><img src="./img/ReveneuDark.png" alt=""></span>
                         <span class="title">Revenue Stats</span>
                     </a>
                 </li>
             </ul>
 
-
             <div class="supportSection ps-4">
                 <h1 class="pt-5">Support 24/7</h1>
                 <h2>Contacts us anytime</h2>
-                <a href="#"><button class="startBtn">Start</button></a>
+                <a href="support.html"><button class="startBtn">Start</button></a>
                 <img src="./img/supportImg.png" alt="">
             </div>
 
@@ -205,252 +205,246 @@
         </div>
 
         <div class="content active py-3 px-sm-4 px-2">
-            <div class="d-flex align-items-center justify-content-between mt-3">
+            <div class="d-flex justify-content-between align-items-center mt-3">
                 <div class="contentSearchBar me-4 d-flex align-items-center">
                     <img src="./img/searchIcon.png" class="ms-4" alt="">
                     <input type="text" class="ms-3" placeholder="Search...">
                 </div>
-                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#emptyNotification">
+                <a href="#" class="text-decoration-none ms-auto" data-bs-toggle="modal"
+                    data-bs-target="#emptyNotification">
                     <div class="bellBtn"><img src="./img/bellIcon.png" alt=""></div>
                 </a>
             </div>
+            <!-- Notification Modals -->
+            <!--  Notification Modal 1 -->
+            <div class="modal" tabindex="-1" id="emptyNotification">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="heading text-center mt-5">No New Notification Yet</div>
+                            <img src="./img/notification.png" class="d-block mx-auto mb-5 notificationBell" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Notification Modal 1 ends -->
+            <!-- Notification Modals ends -->
 
-            <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap">
-                <div class="d-flex align-items-center">
-                    <div class="upcomingHeading">Edit Course - Video Course</div>
+            <div class="d-flex align-items-center mt-3 justify-content-between">
+                <div>
+                    <div class="upcomingHeading">Teacher Report Card</div>
                 </div>
                 <div class="d-flex align-items-center justify-content-end">
-                    <div class="contentFilter me-3" data-bs-toggle="modal" data-bs-target="#filterModal" role="button">
+                    <div class="contentFilter me-3" data-bs-toggle="modal" data-bs-target="#oneOnOneFilterModal"
+                        role="button">
                         <img src="/img/filter.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="row coursesVideo mt-3 p-1 mx-2 gx-0">
-                <div class="col-sm-3 d-flex justify-content-center align-items-center">
-                    <iframe width="90%" height="90%" style="border-radius: 12px;"
-                        src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-9">
-                    <div class="d-flex justify-content-between">
-                        <h3 class="mt-3 ms-1">
-                            Kids vocabulary - Geography - Nature - Learn Englsh
-                        </h3>
-                        <div class="rating px-2 py-1 text-light me-2 mt-3">
-                            <i class="fa-solid fa-star"></i> 4.3
+
+            <!-- filter modal 1 -->
+            <div class="modal" tabindex="-1" id="oneOnOneFilterModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../img/filter.png" alt="">
+                            <h5 class="modal-title filterHeading">Filter</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </div>
-                    <div class="d-flex align-items-center ms-1">
-                        <h4 class="me-2">English Classes</h4>
-                        <h4 class="me-2"><img src="./img/dot.png" alt=""></h4>
-                        <h4 class="me-2">CBSE</h4>
-                        <h4 class="me-2"><img src="./img/dot.png" alt=""></h4>
-                        <h4 class="me-2">7th Class</h4>
-                        <h4 class="me-2"><i class="fa-solid fo-10 fa-book-bookmark"></i></h4>
-                        <h4 class="me-2">25 Lectures</h4>
-                        <h4 class="me-2"><i class=" fa-regular fo-10 fa-clock"></i></h4>
-                        <h4 class="me-2">12 hrs 15 min</h4>
-                    </div>
-                    <p class="ms-1 me-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit in at
-                        viverra.Lorem
-                        ipsum dolor sit amet, consectetur adipiscing elit. Blandit in at viverra.</p>
-                    <div class="d-flex ms-1 justify-content-between align-items-center flex-wrap me-2"
-                        id="courseCard-footer">
-                        <div class="d-flex flex-row align-items-center">
-                            <h4 class="mb-0"><i class="fa-solid fa-eye me-2 "></i></h4>
-                            <h4 class="me-2 mb-0">1.5k views</h4>
-                            <h4 class="me-2 mb-0"><img src="./img/dot.png" alt=""></h4>
-                            <h4 class="me-2 mb-0">1 year ago</h4>
-                        </div>
-                        <div>
-                            <a id="videoEdit" href="" data-bs-toggle="modal" data-bs-target="#modal1"><img
-                                    src="img/editPen.png" alt="" class="me-2"> Edit</a> |
-                            <a id="videoRemove" href=""><img src="img/Remove.png" alt="" class="me-2"> Remove</a>
+                        <div class="modal-body">
+                            <div id="allAccordion">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="true" aria-controls="collapseTwo">
+                                                Board
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="choices me-2 mt-2">State Board (90)</div>
+                                                    <div class="choices me-2 mt-2">CBSE (167)</div>
+                                                    <div class="choices me-2 mt-2">ICSE (456)</div>
+                                                    <div class="choices me-2 mt-2">M.P Board (90)</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="true" aria-controls="collapseThree">
+                                                Class
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="choices me-2 mt-2">KG</div>
+                                                    <div class="choices me-2 mt-2">LKG</div>
+                                                    <div class="choices me-2 mt-2">UKG</div>
+                                                    <div class="choices me-2 mt-2">1st</div>
+                                                    <div class="choices me-2 mt-2">2nd</div>
+                                                    <div class="choices me-2 mt-2">3rd</div>
+                                                    <div class="choices me-2 mt-2">4th</div>
+                                                    <div class="choices me-2 mt-2">5th</div>
+                                                    <div class="choices me-2 mt-2">6th</div>
+                                                    <div class="choices me-2 mt-2">7th</div>
+
+                                                </div>
+                                                <a href="#" class="showAll">Show all <i
+                                                        class="fa-solid fa-angle-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="true" aria-controls="collapseFour">
+                                                Stream
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="choices me-2 mt-2">Science</div>
+                                                    <div class="choices me-2 mt-2">Commerce</div>
+                                                    <div class="choices me-2 mt-2">Arts</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                aria-expanded="true" aria-controls="collapseSeven">
+                                                Subjects
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse"
+                                            aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="choices me-2 mt-2">Physics</div>
+                                                    <div class="choices me-2 mt-2">Maths</div>
+                                                    <div class="choices me-2 mt-2">Chemistry</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                Revenue Stats
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="choices me-2 mt-2">Daily</div>
+                                                    <div class="choices me-2 mt-2">Monthly</div>
+                                                    <div class="choices me-2 mt-2">Yearly</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="button" class="btn px-3 me-3" id="clearBtn">Clear</button>
+                                <button type="button" class="btn searchBtn px-3" data-bs-dismiss="modal">Search</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- filter modal 1 ends -->
 
-        </div>
-    </div>
-
-<!-- Auditory modal ends-->
-<!-- Notification Modals -->
-<!--  Notification Modal 1 -->
-<div class="modal" tabindex="-1" id="emptyNotification">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="heading text-center mt-5">No New Notification Yet</div>
-                <img src="./img/notification.png" class="d-block mx-auto mb-5 notificationBell" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!--  Notification Modal 1 ends -->
-<!-- Notification Modals ends -->
-
-    <!-- filter modal 1 -->
-    <div class="modal" tabindex="-1" id="filterModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img src="../img/filter.png" alt="">
-                    <h5 class="modal-title filterHeading">Filter</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="accountDetailsContainer mt-3">
+                <div class="row accountDetailsContent">
+                    <div class="col-md-1 mx-auto">
+                        <div class="profilePic">
+                            <img src="./img/profilePicBg.png" class="profilePicBg" alt="">
+                            <img src="./img/profileImg.png" class="profileImg" alt="">
+                            <img src="./img/changeProfileImg.png" class="changeProfileImg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 ps-3">
+                        <h1 class="mt-2">Riya sharma</h1>
+                        <div class="d-flex flex-wrap">
+                            <h2 class="me-1">CBSE </h2>
+                            <h2 class="me-1"><span class="yellowColorText"> | </span></h2>
+                            <h2 class="me-1">7th Class </h2>
+                            <h2 class="me-1"><span class="yellowColorText"> | </span></h2>
+                            <h2 class="me-1">LM Id : </h2>
+                            <h2 class="me-1">#584151213331</h2>
+                            <h2 class="me-1"><span class="yellowColorText"> | </span></h2>
+                            <h2 class="me-3">Rating :</h2>
+                            <h2 class="me-1"><i class="fa-solid fa-star yellowColorText"></i></h2>
+                            <h2 class="me-1">4/5</h2>
+                        </div>
+                        <div class="d-flex mt-3 flex-wrap">
+                            <h2 class="me-2"><i class="fa-regular fa-envelope yellowColorText"></i> abc@gmail.com</h2>
+                            <h2 class="me-2"><img src="./img/telephoneIcon.png" alt=""> +91-986543210</h2>
+                            <h2 class="me-2"><img src="./img/locationIcon.png" alt=""> Pune, Maharashtra</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center align-items-center ps-3">
+                        <div class="d-flex align-items-center">
+                            <h1 class="align-text-center mb-0 me-1"><b>Total Revenue : </b></h1>
+                            <div class="revenueBtn"><button >5000</button></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div id="allAccordion">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Courses
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex flex-wrap">
-                                            <div class="choices me-2 mt-2">Video Courses</div>
-                                            <div class="choices me-2 mt-2">Study Material</div>
-                                            <div class="choices me-2 mt-2">Avhhyas</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="scoreCardHeading mt-4 text-center py-1">Revenue Card
+                <p>( Revenue generated in a month )</p>
+            </div>
+            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
+                <div class="row d-flex justify-content-between pb-4">
+                    <div class="col-5 blackFont d-flex justify-content-center">Personal Learning Course</div>
+                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
+                    <div class="col-5 d-flex justify-content-center"> <span class="greyFont me-2"><b>Total Revenue : </b></span><div class="revenueBtn"><button>5000</button></div></div>
+                </div>
+                <div class="row d-flex flex-wrap" id="reverse">
+                    <div class="col-5">
 
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                        Board
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex flex-wrap">
-                                            <div class="choices me-2 mt-2">State Board (90)</div>
-                                            <div class="choices me-2 mt-2">CBSE (167)</div>
-                                            <div class="choices me-2 mt-2">ICSE (456)</div>
-                                            <div class="choices me-2 mt-2">M.P Board (90)</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="true"
-                                        aria-controls="collapseThree">
-                                        Class
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex flex-wrap">
-                                            <div class="choices me-2 mt-2">KG</div>
-                                            <div class="choices me-2 mt-2">LKG</div>
-                                            <div class="choices me-2 mt-2">UKG</div>
-                                            <div class="choices me-2 mt-2">1st</div>
-                                            <div class="choices me-2 mt-2">2nd</div>
-                                            <div class="choices me-2 mt-2">3rd</div>
-                                            <div class="choices me-2 mt-2">4th</div>
-                                            <div class="choices me-2 mt-2">5th</div>
-                                            <div class="choices me-2 mt-2">6th</div>
-                                            <div class="choices me-2 mt-2">7th</div>
-
-                                        </div>
-                                        <a href="#" class="showAll">Show all <i class="fa-solid fa-angle-down"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="true"
-                                        aria-controls="collapseFour">
-                                        Stream
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex flex-wrap">
-                                            <div class="choices me-2 mt-2">Science</div>
-                                            <div class="choices me-2 mt-2">Commerce</div>
-                                            <div class="choices me-2 mt-2">Arts</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeven" aria-expanded="true"
-                                        aria-controls="collapseSeven">
-                                        Subjects
-                                    </button>
-                                </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex flex-wrap">
-                                            <div class="choices me-2 mt-2">Physics</div>
-                                            <div class="choices me-2 mt-2">Maths</div>
-                                            <div class="choices me-2 mt-2">Chemistry</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
-                        <button type="button" class="btn px-3 me-3" id="clearBtn">Clear</button>
-                        <button type="button" class="btn searchBtn px-3" data-bs-dismiss="modal">Search</button>
+                    <div class="col-7 d-flex justify-content-between ps-0 align-items-baseline">
+                            <button class="applyBtn px-3 py-1 mt-2 ">View Details</button>
+                            <h5 >Due Amount: <b>2000</b></h5>
                     </div>
+          
                 </div>
             </div>
         </div>
     </div>
-    <!-- filter modal 1 ends -->
-    <!-- modal 3 -->
-    <div class="modal" tabindex="-1" id="modal1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-content1" id="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h1>Are you sure you want to
-                        edit this Cousre ?</h1>
-                    <div class="d-flex justify-content-center mt-5">
-                        <button class="sampeBtn px-3 me-3">No</button>
-                        <button class="buyBtn px-3 ">Yes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 3 End -->
 
-    <footer class=" mt-5">
+    <footer class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="border-end col-lg-3 pe-2 pt-2">
@@ -464,13 +458,11 @@
                     </div>
                     <div class="d-flex align-items-center text-light mt-2">
                         <i class="fa-solid fa-phone"></i>
-                        <div class="ms-3 addressTelMail"><a href="tel:(+91) 9876543210">(+91)
-                                9876543210</a></div>
+                        <div class="ms-3 addressTelMail"><a href="tel:(+91) 9876543210">(+91) 9876543210</a></div>
                     </div>
                     <div class="d-flex align-items-center text-light mt-2">
                         <i class="fa-regular fa-envelope"></i>
-                        <div class="ms-3 addressTelMail"><a href="mailto:abc@mail.com">abc@mail.com</a>
-                        </div>
+                        <div class="ms-3 addressTelMail"><a href="mailto:abc@mail.com">abc@mail.com</a></div>
                     </div>
                     <div class="d-flex mt-5">
                         <a href="#" class="ms-2"><img src="../img/footerYoutube.png" class="footerYoutube" alt=""></a>
@@ -487,17 +479,14 @@
                             <div class="mt-1"><a href="../aboutUs.html">About Us</a></div>
                             <div class="mt-1"><a href="../contact.html">Contact </a></div>
                             <div class="mt-1"><a href="../privacyPolicy.html">Privacy Policy</a></div>
-                            <div class="mt-1"><a href="../termsCondition.html">Terms & Condition</a>
-                            </div>
-                            <div class="mt-1"><a href="../refundPolicy.html">Pricing & Refund Policy</a>
-                            </div>
+                            <div class="mt-1"><a href="../termsCondition.html">Terms & Condition</a></div>
+                            <div class="mt-1"><a href="../refundPolicy.html">Pricing & Refund Policy</a></div>
                         </div>
                         <div class="ms-2">
                             <div class="mt-1"><a href="../faq.html">FAQs</a></div>
                             <div class="mt-1"><a href="../siteMap.html">Sitemap</a></div>
                             <div class="mt-1"><a href="../forum.html">Discussion Forum</a></div>
-                            <div class="mt-1"><a href="../index.html#bookCounselling">Book Free
-                                    Counselling</a></div>
+                            <div class="mt-1"><a href="../index.html#bookCounselling">Book Free Counselling</a></div>
                         </div>
                     </div>
                 </div>
@@ -525,8 +514,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footerTag mt-5 pb-3 text-light text-center">© Copyright 2022 -(Company Name)
-                Pvt. Ltd.</div>
+            <div class="footerTag mt-5 pb-3 text-light text-center">© Copyright 2022 -(Company Name) Pvt. Ltd.</div>
         </div>
         <div class="d-flex justify-content-end">
             <div class="toTop me-4">
@@ -556,6 +544,7 @@
     <!-- js file -->
     <script src="../js/script.js"></script>
     <script src="./js/sideNavbar.js"></script>
+    <script src="./js/leaderBoardCarousel.js"></script>
     <script src="../js/pricing.js"></script>
 </body>
 

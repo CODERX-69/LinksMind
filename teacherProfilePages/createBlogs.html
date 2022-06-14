@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="../css/courses.css">
     <link rel="stylesheet" href="../css/mcqTest.css">
-    <link rel="stylesheet" href="css/accountDetail.css">
     <link rel="stylesheet" href="./css/studentReportCard.css">
+    <link rel="stylesheet" href="css/accountDetail.css">
     <title>Links Mind</title>
 </head>
 
@@ -143,6 +143,7 @@
                 </li>
                 <li class="list">
                     <a href="#">
+
                         <span class="icon"><img src="./img/followedTeacherIcon.png" alt=""></span>
                         <span class="title">Students</span>
                     </a>
@@ -165,15 +166,17 @@
                         <span class="title">Recorded Videos</span>
                     </a>
                 </li>
-                <li class="list ">
+                <li class="list">
                     <a href="#">
                         <span class="icon"><img src="./img/jobDesc.png" alt=""></span>
                         <span class="title">Job Notification</span>
                     </a>
                 </li>
-                <li class="list ">
+                <li class="list active">
                     <a href="#">
-                        <span class="icon"><img src="./img/createBlog.png" alt=""></span>
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><img src="./img/createBlogDark.png" alt=""></span>
                         <span class="title">Create Blogs</span>
                     </a>
                 </li>
@@ -183,11 +186,9 @@
                         <span class="title">Reshuffle Courses</span>
                     </a>
                 </li>
-                <li class="list active">
+                <li class="list ">
                     <a href="#">
-                        <b></b>
-                        <b></b>
-                        <span class="icon"><img src="./img/ReveneuDark.png" alt=""></span>
+                        <span class="icon"><img src="./img/Revenue.png" alt=""></span>
                         <span class="title">Revenue Stats</span>
                     </a>
                 </li>
@@ -204,7 +205,7 @@
                         alt=""> Logout</button></a>
         </div>
 
-        <div class="content active py-3 pb-5 px-sm-4 px-2">
+        <div class="content active py-3 px-sm-4 px-2">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <div class="contentSearchBar me-4 d-flex align-items-center">
                     <img src="./img/searchIcon.png" class="ms-4" alt="">
@@ -233,17 +234,6 @@
             <!--  Notification Modal 1 ends -->
             <!-- Notification Modals ends -->
 
-            <div class="d-flex align-items-center mt-3 justify-content-between">
-                <div>
-                    <div class="upcomingHeading">Revenue Stats</div>
-                </div>
-                <div class="d-flex align-items-center justify-content-end">
-                    <div class="contentFilter me-3" data-bs-toggle="modal" data-bs-target="#oneOnOneFilterModal"
-                        role="button">
-                        <img src="/img/filter.png" alt="">
-                    </div>
-                </div>
-            </div>
 
             <!-- filter modal 1 -->
             <div class="modal" tabindex="-1" id="oneOnOneFilterModal">
@@ -331,7 +321,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item mt-3">
                                         <h2 class="accordion-header" id="headingSeven">
@@ -353,27 +342,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item mt-3">
-                                        <h2 class="accordion-header" id="headingFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                aria-expanded="true" aria-controls="collapseFive">
-                                                Revenue Stats
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="choices me-2 mt-2">Daily</div>
-                                                    <div class="choices me-2 mt-2">Monthly</div>
-                                                    <div class="choices me-2 mt-2">Yearly</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
                                 <button type="button" class="btn px-3 me-3" id="clearBtn">Clear</button>
@@ -385,138 +353,110 @@
             </div>
             <!-- filter modal 1 ends -->
 
-            <div class="accountDetailsContainer mt-3">
-                <div class="row accountDetailsContent">
-                    <div class="col-md-1 mx-auto">
-                        <div class="profilePic">
-                            <img src="./img/profilePicBg.png" class="profilePicBg" alt="">
-                            <img src="./img/profileImg.png" class="profileImg" alt="">
-                            <img src="./img/changeProfileImg.png" class="changeProfileImg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6 ps-3">
-                        <h1 class="mt-2">Riya sharma</h1>
-                        <div class="d-flex flex-wrap">
-                            <div class="teacherDescription"> Maths Teacher <span class="yellowColorText">|</span>
-                                <span class="text-muted">LM Id
-                                    :</span>
-                                #584151213331
+
+            <div class="d-flex align-items-center mt-3">
+                <div class="upcomingHeading">Create Blogs</div>
+            </div>
+            <div class="container">
+                <div class="row uploadbox">
+                    <div class="col-md-3 col-lg-2 col-6 col-sm-4 box2 mt-2 h-100">
+                        <div class="row justify-content-center">
+                            <div class="col img17">
+                                <a href="blogInformation.html"><img src="../img/img17.png" class="img-fluid" alt=""></a>
                             </div>
-                            <span class="yellowColorText">|</span>
-                            <span class="text-muted text-end">Followers
-                                : </span>
-                            1.5K
                         </div>
-                        <div class="d-flex mt-3 flex-wrap">
-                            <h2 class="me-2"><i class="fa-regular fa-envelope yellowColorText"></i> abc@gmail.com</h2>
-                            <h2 class="me-2"><img src="./img/telephoneIcon.png" alt=""> +91-986543210</h2>
-                            <h2 class="me-2"><img src="./img/locationIcon.png" alt=""> Pune, Maharashtra</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-5 d-flex flex-wrap justify-content-center align-items-center ps-3">
-                        <div class="d-flex align-items-center">
-                            <h1 class="align-text-center mb-0 me-1"><b>Total Revenue : </b></h1>
-                            <div class="revenueBtn"><button>5000</button></div>
+                        <div class="row justify-content-center">
+                            <p class="create3">Create a new <br>
+                                Blog
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="scoreCardHeading mt-4 text-center py-1">Revenue Card
-                <p>( Revenue generated in a month )</p>
-            </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
-                <div class="row d-flex justify-content-between pb-4">
-                    <div class="col-5 blackFont d-flex ">Personal Learning Course</div>
-                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
-                    <div class="col-5 d-flex justify-content-center flex-wrap"> <span class="greyFont me-2"><b>Total
-                                Revenue:
-                            </b></span>
-                        <div class="revenueBtn"><button>5000</button></div>
+            <div class="d-flex justify-content-between flex-wrap align-items-center mt-3">
+                <div class="align-items-center text-center">
+                    <div class="upcomingHeading mx-auto">Created Blogs</div>
+                </div>
+                <div class="d-flex align-items-center flex-wrap" style="gap: 0.5rem;">
+                    <div class="d-flex align-items-center">
+                        <input type="date" class="me-3 avhhyasDate px-2 py-1">
+                        <div class="contentFilter me-3" data-bs-toggle="modal" data-bs-target="#oneOnOneFilterModal"
+                            role="button">
+                            <img src="/img/filter.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="d-grid" id="reverse">
-                    <a href="revenueStats1.html" class="text-decoration-none"><button class="applyBtn px-3 py-1 mt-2 d-block">View Details</button></a>
-                    <h5 class="mb-0">Due Amount: <b>2000</b></h5>
+                    <a href="#"><img src="./img/viewAllBtn.png"
+                            class="viewAllBtnStudyMaterialPage d-block ms-md-0 ms-auto" alt=""></a>
                 </div>
             </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
-                <div class="row d-flex justify-content-between pb-4">
-                    <div class="col-5 blackFont d-flex ">Doubt Clearing Session</div>
-                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
-                    <div class="col-5 d-flex justify-content-center flex-wrap"> <span class="greyFont me-2"><b>Total
-                                Revenue:
-                            </b></span>
-                        <div class="revenueBtn"><button>5000</button></div>
+            <section id="blogSection">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-sm-6 col-9 mt-3">
+                        <a href="" class="text-decoration-none">
+                            <div class="questionCard py-2 px-2">
+                                <div class="mt-3 mt-md-0">
+                                    <img src="../img/blog2.png" class="blogImg" alt="">
+                                    <div class="yellowTag2">Chemistry</div>
+                                </div>
+                                <div class="">
+                                    <div class="name ms-2">Class Technologies Inc. Closes $30 Million Series A
+                                        Finan</div>
+                                    <div class="lightGreyBigText border-2 pt-3 pb-5 ms-2">Class
+                                        Technologies Inc.,
+                                        the
+                                        company that
+                                        created
+                                        Class,...</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="d-grid" id="reverse">
-                    <a href="revenueStats2.html" class="text-decoration-none"><button class="applyBtn px-3 py-1 mt-2 d-block">View Details</button></a>
-                    <h5 class="mb-0">Due Amount: <b>2000</b></h5>
-                </div>
-            </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
-                <div class="row d-flex justify-content-between pb-4">
-                    <div class="col-5 blackFont d-flex ">Cat Course</div>
-                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
-                    <div class="col-5 d-flex justify-content-center flex-wrap"> <span class="greyFont me-2"><b>Total
-                                Revenue:
-                            </b></span>
-                        <div class="revenueBtn"><button>5000</button></div>
+                    <div class="col-md-4 col-sm-6 mt col-9 mt-3">
+                        <a href="" class="text-decoration-none">
+                            <div class="questionCard py-2 px-2">
+                                <div class="mt-3 mt-md-0">
+                                    <img src="../img/blog2.png" class="blogImg" alt="">
+                                    <div class="yellowTag2">Chemistry</div>
+                                </div>
+                                <div class="">
+                                    <div class="name ms-2">Class Technologies Inc. Closes $30 Million Series A
+                                        Finan</div>
+                                    <div class="lightGreyBigText border-2 pt-3 pb-5 ms-2">Class
+                                        Technologies Inc.,
+                                        the
+                                        company that
+                                        created
+                                        Class,...</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+                    <!-- <div class="col-md-4 col-sm-6 col-9 mt-3">
+                        <a href="" class="text-decoration-none">
+                            <div class="questionCard py-2 px-2">
+                                <div class="mt-3 mt-md-0">
+                                    <img src="../img/blog2.png" class="blogImg" alt="">
+                                    <div class="yellowTag2">Chemistry</div>
+                                </div>
+                                <div class="">
+                                    <div class="name ms-2">Class Technologies Inc. Closes $30 Million Series A
+                                        Finan</div>
+                                    <div class="lightGreyBigText border-2 pt-3 pb-5 ms-2">Class
+                                        Technologies Inc.,
+                                        the
+                                        company that
+                                        created
+                                        Class,...</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
                 </div>
-                <div class="d-grid" id="reverse">
-                    <a href="revenueStats3.html" class="text-decoration-none"><button class="applyBtn px-3 py-1 mt-2 d-block">View Details</button></a>
-                    <h5 class="mb-0">Due Amount: <b>2000</b></h5>
-                </div>
-            </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
-                <div class="row d-flex justify-content-between pb-4">
-                    <div class="col-5 blackFont d-flex ">Video Course</div>
-                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
-                    <div class="col-5 d-flex justify-content-center flex-wrap"> <span class="greyFont me-2"><b>Total
-                                Revenue:
-                            </b></span>
-                        <div class="revenueBtn"><button>5000</button></div>
-                    </div>
-                </div>
-                <div class="d-grid" id="reverse">
-                    <a href="revenueStats4.html" class="text-decoration-none"><button class="applyBtn px-3 py-1 mt-2 d-block">View Details</button></a>
-                    <h5 class="mb-0">Due Amount: <b>2000</b></h5>
-                </div>
-            </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
-                <div class="row d-flex justify-content-between pb-4">
-                    <div class="col-5 blackFont d-flex">Avhhyas</div>
-                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
-                    <div class="col-5 d-flex justify-content-center flex-wrap"> <span class="greyFont me-2"><b>Total
-                                Revenue:
-                            </b></span>
-                        <div class="revenueBtn"><button>5000</button></div>
-                    </div>
-                </div>
-                <div class="d-grid" id="reverse">
-                    <a href="revenueStats5.html" class="text-decoration-none"><button class="applyBtn px-3 py-1 mt-2 d-block">View Details</button></a>
-                    <h5 class="mb-0">Due Amount: <b>2000</b></h5>
-                </div>
-            </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3" id="revenueCard">
-                <div class="row d-flex justify-content-between pb-4">
-                    <div class="col-5 blackFont d-flex">Study Material</div>
-                    <div class="col-2 d-flex justify-content-center align-items-center" id="verti_line">|</div>
-                    <div class="col-5 d-flex justify-content-center flex-wrap"> <span class="greyFont me-2"><b>Total
-                                Revenue:
-                            </b></span>
-                        <div class="revenueBtn"><button>5000</button></div>
-                    </div>
-                </div>
-                <div class="d-grid" id="reverse">
-                    <a href="revenueStats6.html" class="text-decoration-none"><button class="applyBtn px-3 py-1 mt-2 d-block">View Details</button></a>
-                    <h5 class="mb-0">Due Amount: <b>2000</b></h5>
-                </div>
-            </div>
+            </section>
+
+
         </div>
     </div>
-
     <footer class="mt-5">
         <div class="container">
             <div class="row">
@@ -559,7 +499,8 @@
                             <div class="mt-1"><a href="../faq.html">FAQs</a></div>
                             <div class="mt-1"><a href="../siteMap.html">Sitemap</a></div>
                             <div class="mt-1"><a href="../forum.html">Discussion Forum</a></div>
-                            <div class="mt-1"><a href="../index.html#bookCounselling">Book Free Counselling</a></div>
+                            <div class="mt-1"><a href="../index.html#bookCounselling">Book Free Counselling</a>
+                            </div>
                         </div>
                     </div>
                 </div>

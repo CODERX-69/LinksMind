@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../css/courses.css">
     <link rel="stylesheet" href="../css/mcqTest.css">
     <link rel="stylesheet" href="./css/studentReportCard.css">
-    <link rel="stylesheet" href="./css/accountDetail.css">
+    <link rel="stylesheet" href="css/accountDetail.css">
     <title>Links Mind</title>
 </head>
 
@@ -166,17 +166,17 @@
                         <span class="title">Recorded Videos</span>
                     </a>
                 </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><img src="./img/jobDesc.png" alt=""></span>
+                        <span class="title">Job Notification</span>
+                    </a>
+                </li>
                 <li class="list active">
                     <a href="#">
                         <b></b>
                         <b></b>
-                        <span class="icon"><img src="./img/jobDescDark.png" alt=""></span>
-                        <span class="title">Job Notification</span>
-                    </a>
-                </li>
-                <li class="list ">
-                    <a href="#">
-                        <span class="icon"><img src="./img/createBlog.png" alt=""></span>
+                        <span class="icon"><img src="./img/createBlogDark.png" alt=""></span>
                         <span class="title">Create Blogs</span>
                     </a>
                 </li>
@@ -206,7 +206,7 @@
         </div>
 
         <div class="content active py-3 px-sm-4 px-2">
-            <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="d-flex flex-wrap align-items-center mt-3">
                 <div class="contentSearchBar me-4 d-flex align-items-center">
                     <img src="./img/searchIcon.png" class="ms-4" alt="">
                     <input type="text" class="ms-3" placeholder="Search...">
@@ -215,254 +215,185 @@
                     data-bs-target="#emptyNotification">
                     <div class="bellBtn"><img src="./img/bellIcon.png" alt=""></div>
                 </a>
-            </div>
-            <!-- Notification Modals -->
-            <!--  Notification Modal 1 -->
-            <div class="modal" tabindex="-1" id="emptyNotification">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="heading text-center mt-5">No New Notification Yet</div>
-                            <img src="./img/notification.png" class="d-block mx-auto mb-5 notificationBell" alt="">
+
+                <!-- Notification Modals -->
+                <!--  Notification Modal 1 -->
+                <div class="modal" tabindex="-1" id="emptyNotification">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="heading text-center mt-5">No New Notification Yet</div>
+                                <img src="./img/notification.png" class="d-block mx-auto mb-5 notificationBell" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--  Notification Modal 1 ends -->
+                <!-- Notification Modals ends -->
             </div>
-            <!--  Notification Modal 1 ends -->
-            <!-- Notification Modals ends -->
             <div class="d-flex align-items-center mt-3">
-                <div class="upcomingHeading">Jobs Notification</div>
+                <a href="createBlogs.html" class="text-decoration-none"><div class="upcomingHeading">Create Blogs</div></a>
             </div>
-            <div class="scoreCard py-4 px-md-4 px-3 mt-3">
-                <div class="d-flex justify-content-between pb-2">
-                    <div class="yellowFont">Personal Learning Course</div>
-                    <div>
-                        <p>1 Week Ago</p>
+            <div class="container box6 mt-3">
+                <div class="row justify-content-center d-flex gy-2">
+
+                    <div class="col-md-1 col-4">
+                        <a href="blogInformation.html"> <button class="button2 button5">A</button></a>
                     </div>
+                    <div class="col-md-3 col-6">
+                        <p class="about2">Information</p>
+                    </div>
+                    <div class="col-md-1 col-2 align-self-center">
+                        <img src="img/img18.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-md-1 col-4 ">
+                        <a href="blogContent.html"><button class="button button5">B</button></a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <p class="about2">Blog Content</p>
+                    </div>
+                    <div class="col-md-1 col-2"></div>
                 </div>
-                <!-- <div class="mt-4">
-                    <span class="smallGreyFont">Start Date :</span>
-                    <span class="smallBlackFont">22/03/2022</span>
-                </div> -->
-                <div class="row pt-4 pb-4 d-flex flex-wrap" id="job-card">
-                    <div class="col-sm-6">
-                        <div>
-                            <h5>No. of Slots : 05</h5>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h4 class="mt-3">
-                                Kids vocabulary - Geography - Nature - Learn Englsh
-                            </h4>
-                        </div>
-                        <div class="d-flex align-items-center flex-wrap" id="jobs">
-                            <p class="me-3">English Classes</p>
-                            <p class="me-3"><i class="fa-solid fo-10 fa-book-bookmark me-1"></i>25 Lectures</p>
-                            <p class="me-3"><i class=" fa-regular fo-10 fa-clock me-1"></i>2 Hours Daily</p>
-                            <p class="me-3"><i class="fa-solid fa-signal me-1"></i>Pro</p>
-                        </div>
-                        <div class="d-flex mt-3">
-                            <div class="outerGreenCircle mt-1 me-1">
-                                <div class="innerGreenCircle d-flex justify-content-center align-items-center">
-                                    <img src="../img/tick.png" width="6px" alt="">
-                                </div>
-                            </div>
-                            <p class="highQuality">High Quality Educational content</p>
-                        </div>
-                        <div class="d-flex">
-                            <div class="outerGreenCircle mt-1 me-1">
-                                <div class="innerGreenCircle d-flex justify-content-center align-items-center">
-                                    <img src="../img/tick.png" width="6px" alt="">
-                                </div>
-                            </div>
-                            <p class="highQuality">High Quality Educational content</p>
-                        </div>
-                        <div class="d-flex">
-                            <div class="outerGreenCircle mt-1 me-1">
-                                <div class="innerGreenCircle d-flex justify-content-center align-items-center">
-                                    <img src="../img/tick.png" width="6px" alt="">
-                                </div>
-                            </div>
-                            <p class="highQuality">High Quality Educational content</p>
-                        </div>
-                        <div class="d-flex">
-                            <div class="outerGreenCircle mt-1 me-1">
-                                <div class="innerGreenCircle d-flex justify-content-center align-items-center">
-                                    <img src="../img/tick.png" width="6px" alt="">
-                                </div>
-                            </div>
-                            <p class="highQuality">High Quality Educational content</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6" id="content">
-                        <div class="row accountDetailsContent">
-                            <div class="col-md-3 d-flex" id="proPic">
-                                <div class="profilePic">
-                                    <img src="./img/profilePicBg.png" class="profilePicBg" alt="">
-                                    <img src="./img/profileImg.png" class="profileImg" alt="">
-                                    <img src="./img/changeProfileImg.png" class="changeProfileImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-9 d-flex flex-column" id="jobsName">
-                                <h1 class="mt-2">Riyan sharma</h1>
-                                <div class="d-flex flex-wrap" id="nameDetails">
-                                    <h2 class="me-1">CBSE </h2>
-                                    <h2 class="me-1"><span class="yellowColorText"> | </span></h2>
-                                    <h2 class="me-1">7th Class </h2>
-                                    <h2 class="me-1"><span class="yellowColorText"> | </span></h2>
-                                    <h2 class="me-1">LM Id : </h2>
-                                    <h2 class="me-1">#584151213331</h2>
-                                    <h2 class="me-1"><span class="yellowColorText"> | </span></h2>
-                                    <h2 class="me-1">Rating :</h2>
-                                    <h2 class="me-1"><i class="fa-solid fa-star yellowColorText me-1"></i>4/5</h2>
-                                    <h2 class="me-1"></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Heading mt-3">Student availability</div>
-                        <div class="d-flex flex-wrap align-items-end">
-                            <div class="selectAvailaibilityContainer mt-3 me-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="selectAvailaibilityContent">
-                                        <h2>Tuesday</h2>
-                                        <h2>27 july,2000</h2>
-                                        <h3>11:30 am - 1:00 pm</h3>
-                                    </div>
-                                    <img src="./img/availableIcon.png" class="availableIcon mt-2" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upcomingHeading mt-3">2 days in a week</div>
-                    </div>
+                <div class="row justify-content-end px-4">
+                    <p class="step">Step</p>
                 </div>
-                <button class="applyBtn px-3 py-2 mt-2 d-block mx-auto" data-bs-target="#scheduleClassModal"
-                    data-bs-toggle="modal">Apply</button>
+                <div class="row px-3">
+                    <p class="number2"><b>02 </b> /02</p>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- schedule Modal -->
-    <!-- modal 1 -->
-    <div class="modal" tabindex="-1" id="scheduleClassModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Book Slot</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-5 ">
+                        <p class="tell">Fill details about your blog</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                                    <p>Meeting Details will be sent on your registered mail.</p>
-                    <div>Select Date</div>
-                    <input type="date" class="mt-3" placeholder="Select Date">
-                    <div class="mt-4">
-                        <div class="d-flex align-items-center">
-                            <div class="dropdown">
-                                <button class="btn" type="button" id="dropdowntime1" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    12:30 pm
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdowntime1">
-                                    <li><a class="dropdown-item" href="#">12:00 am</a></li>
-                                    <li><a class="dropdown-item" href="#">12:15 am</a></li>
-                                    <li><a class="dropdown-item" href="#">12:30 am</a></li>
-                                    <li><a class="dropdown-item" href="#">12:45 am</a></li>
-                                </ul>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Board</p>
+                                </div>
+                                <div class="row">
+                                    <select name="" class="input" id="">
+                                        <option value=""></option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="fo-20 ms-3">to</div>
-                            <div class="dropdown ms-3">
-                                <button class="btn" type="button" id="dropdowntime2" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    1:00 pm
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdowntime2">
-                                    <li><a class="dropdown-item" href="#">12:00 am</a></li>
-                                    <li><a class="dropdown-item" href="#">12:15 am</a></li>
-                                    <li><a class="dropdown-item" href="#">12:30 am</a></li>
-                                    <li><a class="dropdown-item" href="#">12:45 am</a></li>
-                                </ul>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Select Class</p>
+                                </div>
+                                <div class="row">
+                                    <select name="" class="input" id="">
+                                        <option value=""></option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <a href="" class="textDecorationNone" data-bs-toggle="modal" data-bs-dismiss="modal"
-                            data-bs-target="#scheduleClassModal2">
-                            <div class="text-start text-dark nextArrow">next
-                                <img src="../img/nextArrow.png" alt="">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Subject</p>
+                                </div>
+                                <div class="row">
+                                    <select name="" class="input" id="">
+                                        <option value=""></option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                    </select>
+                                </div>
                             </div>
-                        </a>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Stream</p>
+                                </div>
+                                <div class="row">
+                                    <select name="" class="input" id="">
+                                        <option value=""></option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Date</p>
+                                </div>
+                                <div class="row">
+                                    <input type="date" name="" id="" class="input">
+
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Time</p>
+                                </div>
+                                <div class="row">
+                                    <input type="time" name="" id="" class="input">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Language</p>
+                                </div>
+                                <div class="row">
+                                    <select name="" class="input" id="">
+                                        <option value=""></option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                        <option value="lorem">Lorem</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4 col-10">
+                                <div class="row">
+                                    <p class="fname">Topic</p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" name="" id="" class="input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center mt-5 mb-5 ">
+                            <div class="col-md-3 mt-3" id="btnCol">
+                            <a href="blogContent.html"><button type="submit" class="btn nextBtn">Next</button></a>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- modal 2 -->
-    <div class="modal" tabindex="-1" id="scheduleClassModal2">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Book Slot</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body position-realtive">
-                    <p>Meeting Details will be sent on your registered mail.</p>
-                    <div class="d-flex justify-content-center">
-                        <div class="mt-4">
-                            <h5 class="text-center">Lecture - 2 Tuesday 27 july, 2000</h5>
-                            <div class="d-flex">
-                                <div class="owl-carousel scheduleAvailabilityCarousel owl-theme">
-                                    <div class="item d-flex justify-content-center">
-                                        <div class="mt-3 sessionTime blueBorder justify-content-center">
-                                            <div class="dateTime">Tuesday <br>
-                                                27 july, 2000</div>
-                                            <h6 class="mt-3">11:30 am - 1:00 pm</h6>
-                                        </div>
-                                    </div>
-                                    <div class="item d-flex justify-content-center">
-                                        <div class="mt-3 sessionTime">
-                                            <div class="dateTime">Tuesday <br>
-                                                27 july, 2000</div>
-                                            <h6 class="mt-3">11:30 am - 1:00 pm</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="scheduleAvailability-next" role="button"><i
-                                        class="fa-solid fa-angle-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <button class="editScheduleBtn ms-2" data-bs-toggle="modal" data-bs-dismiss="modal"
-                            data-bs-target="#scheduleClassModal">Edit schedule</button>
-                        <button class="scheduleBtn ms-3" data-bs-toggle="modal" data-bs-dismiss="modal"
-                            data-bs-target="#bookSessionModal3">Schedule looks great!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal 2 ends -->
-    <!-- modal 3 -->
-    <div class="modal" tabindex="-1" id="bookSessionModal3">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Meeting Details will be sent on your registered mail.</p>
-                    <img src="../img/allSetImg.png" class="d-block mx-auto" alt="">
-                    <h2 class="mt-3 text-center pb-3">All set ! you will recieve
-                        your schedule via e-mail.</h2>
-                    <p class="text-center">at
-                        <span class="yellowColorText text-decoration-underline">abc@mail.com</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal 3 ends -->
-    <!-- schedule Modal ends -->
     <footer class="mt-5">
         <div class="container">
             <div class="row">
@@ -505,7 +436,8 @@
                             <div class="mt-1"><a href="../faq.html">FAQs</a></div>
                             <div class="mt-1"><a href="../siteMap.html">Sitemap</a></div>
                             <div class="mt-1"><a href="../forum.html">Discussion Forum</a></div>
-                            <div class="mt-1"><a href="../index.html#bookCounselling">Book Free Counselling</a></div>
+                            <div class="mt-1"><a href="../index.html#bookCounselling">Book Free Counselling</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -563,7 +495,7 @@
     <!-- js file -->
     <script src="../js/script.js"></script>
     <script src="./js/sideNavbar.js"></script>
-    <script src="./js/scheduleAvailability.js"></script>
+    <script src="./js/leaderBoardCarousel.js"></script>
     <script src="../js/pricing.js"></script>
 </body>
 
